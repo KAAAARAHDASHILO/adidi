@@ -1,0 +1,74 @@
+<?php 
+
+if(!isset($_COOKIE["id"])) {
+    header("Location: login.php");
+}
+
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAXI | TGN</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="map">
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/971/taganrog/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Таганрог</a><a href="https://yandex.ru/maps/971/taganrog/?ll=38.907520%2C47.225185&utm_medium=mapframe&utm_source=maps&z=13" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/?ll=38.907520%2C47.225185&z=13" width="100%" height="1500px" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+        <header>
+            <div class="head-logo">
+                <img src="./img/Rectangle 1.png" class="head">
+                <img src="./img/79255456483.png" class="logo">
+            </div>
+                <div class="text-header">
+                    <div class="text">АВТОПАРК ТЕХНИКИ</div>
+                    <div class="text1">НАПИСАТЬ В ТЕХПОДДЕРЖКУ</div>
+                    <div class="text2">О КОМПАНИИ</div>
+                </div>
+                <div class="interaktiv">
+                    <img src="img/заказатьзвонок.png" class="call">
+                            <div class="zakaz">
+                        <img src="img/путь.png"  class="tochka_zakaza">
+                        <input class="otkuda" placeholder="Откуда"></input>
+                        <input class="kuda" placeholder="Куда"></input>
+                        <button name="button">Press me</button>
+                            </div>
+                                    <div class="oplata">
+                                    <img src="img/способоплаты.png"  class="safonov_oplati">
+                                    <!-- Rectangular switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                    
+                                    <!-- Rounded switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    
+                                    <label class="switch2">
+                                        <input type="checkbox2">
+                                        <span class="slider2"></span>
+                                    </label>
+                                    
+                                    <!-- Rounded switch -->
+                                    <label class="switch2">
+                                        <input type="checkbox2">
+                                        <span class="slider round2"></span>
+                                    </label>
+                                    <div class="text_oplata">НАЛИЧНЫМИ</div>
+                                    <div class="text_oplata2">КАРТОЙ</div>
+                                    </div>
+                                   
+                </div>
+            </div>
+        </header>
+    </main>
+</body>
+</html>
